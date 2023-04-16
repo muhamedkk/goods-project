@@ -1,0 +1,255 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+.prymaryBtn{
+    background: linear-gradient(268.77deg, #6AAA69 3.02%, #003F5E 138.89%);
+    border-radius: 15px;
+    color: white;
+    border: none;
+    padding: 15px 22px;
+}
+.secondBtn{
+    background: #F9F9F9;
+    border-radius: 15px;
+    color: #6F95B5;
+    border: none;
+    padding: 15px 22px;
+
+}
+.secondBtn:hover{
+    background-color: #003F5E;
+    color: white;
+}
+.secondBtnActive{
+    background-color: #003F5E;
+    color: white;
+    
+}
+.closeModel{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    background: #FFFFFF;
+    /* background: #d80505; */
+    border-radius: 50%;
+    z-index: 20;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.prymaryBtn,.secondBtn{font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;   
+    text-align: center;}
+
+
+
+    /* ORDERS LIST */
+
+    .x2{
+        margin-bottom: 0px  !important;
+        margin-right: 1.5rem;
+    }
+    .x{
+        margin: 0;
+        margin-right: 3rem !important;
+    }
+    .info{
+        margin-right: 3.5%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .info div i{
+        color: #6F95B5;
+        margin-right: 6px;
+
+    }
+    .info div p{
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+        color: rgba(0, 63, 94, 0.45);
+    }
+    .info h6{
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: #000000;
+    }
+    .orderText{
+        font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #000000;
+    }
+    .orderDivS2{
+        height: calc(165px - 43%);
+        display: flex;
+        align-items: center;
+        padding: 0px 3rem;
+    }
+    .orderDivS1{
+        background: #F9F9F9;
+        border-radius: 15px;
+        height: 68px;
+        height: 43% ;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 3rem;
+    }
+    .orderDiv{
+        background: #FFFFFF;
+        border-radius: 15px;
+        width: 100%;
+        height: 165px;
+    }
+    .contanetList{
+        margin-top: 32px;
+    }
+    .info div i{
+        margin-right:10px !important;
+    }
+    @media only screen and (max-width: 1642px){
+        .orderDivS2,.orderDivS1{
+            padding: 0 2rem !important;
+        }
+    
+        .info div p{
+            text-align: center;
+        }
+        .info div {
+            display: flex;
+            flex-direction: column;
+        }
+        .info div i{
+            margin-right:0px !important;
+        }
+        .editIcon{
+            width: 40px !important;
+        }
+    }
+    
+    @media only screen and (max-width: 1425px){
+        .orderDivS2,.orderDivS1{
+            padding: 0 1rem !important;
+        }
+    
+        .info div i{
+            font-size: 11px;
+        }
+        .info div p{
+            font-size: 11px;
+            line-height: 1.5;
+        }
+        .info h6{
+            font-size: 11px;
+            line-height: 1.5;
+        }
+        .orderDivS1 div p{
+            font-size: 11px;
+        }
+        .editIcon{
+            width: 35px;
+        }
+        .orderDivS1 div div{
+            width: 12px !important; 
+            height: 12px !important; 
+        }
+    
+    }
+    @media only screen and (max-width: 992px){
+        .listDiv{
+            width: 100%;
+            min-height:100vh
+        }
+        .editIcon{
+            width: 30px !important;
+        }
+        .x{
+            margin-right: 10px !important;
+        }
+    }
+    @media only screen and (max-width: 715px){
+        .info div i{
+            font-size: 7.5px;
+        }
+        .info div p{
+            text-align: center;
+            font-size: 7.5px;
+            line-height: 1.5;
+        }
+        .info h6{
+            font-size: 7.5px;
+            line-height: 1.5;
+        }
+    
+        .orderDivS1 div p{
+            font-size: 9px !important;
+            line-height: 1.5;
+        }
+        .editIcon{
+            width: 25px !important;
+        }
+    }
+    @media only screen and (max-width: 530px){
+        .info div i{
+            font-size: 6px;
+        }
+        .info div p{
+            text-align: center;
+            font-size: 6px;
+            line-height: 1.5;
+        }
+        .info h6{
+            font-size: 6px;
+            line-height: 1.5;
+        }
+        .orderDivS1 div p{
+            font-size: 7px !important;
+            line-height: 1.5;
+        }
+        .editIcon{
+            width: 20px !important;
+        }
+        .x2{
+            margin-right: 0.5rem;
+        }
+    }
+    @media only screen and (max-width: 450px){
+        .info div i{
+            font-size: 5px;
+        }
+        .info div p{
+            text-align: center;
+            font-size: 5px;
+            line-height: 1.5;
+        }
+        .info h6{
+            font-size: 5px;
+            line-height: 1.5;
+        }
+    }
+
+
+
+
+
+  
